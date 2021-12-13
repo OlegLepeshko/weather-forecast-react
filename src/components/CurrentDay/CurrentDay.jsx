@@ -37,4 +37,4 @@ CurrentDay.propTypes = {
     weatherDescription: PropTypes.string.isRequired,
 };
 
-export default CurrentDay;    
+export default CurrentDay; 

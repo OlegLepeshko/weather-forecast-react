@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 import { Container, Row, Col } from 'react-bootstrap';
 
-import CurrentDay from '../CurrentDay';
-import CurrentDayDescription from '../CurrentDayDescription';
-import UpcomingDaysForecast from '../UpcomingDaysForecast';
+import CurrentDay from '../../components/CurrentDay';
+import CurrentDayDescription from '../../components/CurrentDayDescription';
+import UpcomingDaysForecast from '../../components/UpcomingDaysForecastItem';
 
 import styles from './Forecast.module.css';
 
@@ -18,8 +18,8 @@ const Forecast = ({ forecast }) => (
                 </div>
             </Col>
             <Col xs={12} md={8} className="d-flex flex-column justify-content-between">
-                <CurrentDayDescription forecast={forecast.currentDayDetails} />
-                <UpcomingDaysForecast days={forecast.upcomingDays} />
+                 <CurrentDayDescription forecast={forecast.currentDayDetails} /> 
+                  {/* <UpcomingDaysForecast days={forecast.upcomingDays} />   */}
             </Col>
         </Row>
     </Container>
